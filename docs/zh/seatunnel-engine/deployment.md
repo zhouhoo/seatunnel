@@ -218,7 +218,7 @@ map:
 
 ```yaml
 map:
-    engine*:
+    engine-map:
        map-store:
          enabled: true
          initial-mode: EAGER
@@ -233,7 +233,15 @@ map:
            fs.oss.accessKeyId: OSS access key id
            fs.oss.accessKeySecret: OSS access key secret
            fs.oss.endpoint: OSS endpoint
-           fs.oss.credentials.provider: org.apache.hadoop.fs.aliyun.oss.AliyunCredentialsProvider
+```
+注意：使用oss配置map时，确保{seatunnel_home}/lib 目录下有如下几个jar：
+```
+aliyun-sdk-oss-3.13.2.jar
+hadoop-aliyun-3.3.6.jar
+jdom2-2.0.6.jar
+netty-buffer-4.1.89.Final.jar
+netty-common-4.1.89.Final.jar
+seatunnel-hadoop3-3.3.6-uber.jar
 ```
 
 ## 6. 配置 SeaTunnel Engine 客户端
