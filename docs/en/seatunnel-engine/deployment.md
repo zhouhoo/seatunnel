@@ -222,7 +222,7 @@ if you used OSS, you can config like this:
 
 ```yaml
 map:
-    engine*:
+    engine-map:
        map-store:
          enabled: true
          initial-mode: EAGER
@@ -237,7 +237,18 @@ map:
            fs.oss.accessKeyId: OSS access key id
            fs.oss.accessKeySecret: OSS access key secret
            fs.oss.endpoint: OSS endpoint
-           fs.oss.credentials.provider: org.apache.hadoop.fs.aliyun.oss.AliyunCredentialsProvider
+          
+```
+
+Attentions: make sure your seatunnel lib folder have bellow jars,if not, download from maven repository!
+
+```
+aliyun-sdk-oss-3.13.2.jar
+hadoop-aliyun-3.3.6.jar
+jdom2-2.0.6.jar
+netty-buffer-4.1.89.Final.jar
+netty-common-4.1.89.Final.jar
+seatunnel-hadoop3-3.3.6-uber.jar
 ```
 
 ## 6. Config SeaTunnel Engine Client
