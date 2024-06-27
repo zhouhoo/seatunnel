@@ -240,7 +240,7 @@ map:
           
 ```
 
-Attentions: make sure your seatunnel lib folder have bellow jars,if not, download from maven repository!
+Attentions: make sure your seatunnel lib folder have bellow jars,if not, download from maven repository!!!
 
 ```
 aliyun-sdk-oss-3.13.2.jar
